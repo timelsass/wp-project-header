@@ -17,6 +17,7 @@ const fs = require( 'fs' ),
  */
 module.exports = async ( file ) => {
 	const dir = await pkgDir( __dirname );
-	file = file || dir + path.sep + path.basename( dir ) + '.php';
-	return await fsPromises.access( file, fs.constants.W_OK | fs.constants.R_OK ).catch( () => file = `${ dir + path.sep }style.css` );
+	file = file || dir && dir + path.sep + path.basename( dir ) + '.php';
+	await fsPromises.access( file, fs.constants.W_OK | fs.constants.R_OK ).catch( () => file = `${ dir + path.sep }style.css` );
+	return file;
 }

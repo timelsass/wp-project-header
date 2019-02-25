@@ -11,6 +11,8 @@ Install with yarn:
 $ yarn add wp-project-header --dev
 ```
 
+OR
+
 Install with npm:
 
 ```
