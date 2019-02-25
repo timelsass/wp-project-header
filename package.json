@@ -1,0 +1,12 @@
+{
+  "name": "wp-project-header",
+  "version": "1.0.0",
+  "description": "Automatically determines a plugin or theme's header file.",
+  "main": "index.js",
+  "repository": "https://github.com/timelsass/wp-project-header",
+  "author": "Tim <dev@tim.ph>",
+  "license": "MIT",
+  "dependencies": {
+    "pkg-dir": "^3.0.0"
+  }
+}
